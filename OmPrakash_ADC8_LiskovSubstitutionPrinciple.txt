@@ -1,0 +1,13 @@
+class bird{
+  move();
+  sound();
+}
+
+class realduck{
+    fly();
+    swim();
+}
+
+class toyduck{
+    donot eat();
+}
