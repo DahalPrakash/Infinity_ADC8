@@ -1,3 +1,4 @@
+Explanitation of the Git.
 Git clone:-
       Git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location. The original repository can be located on the local filesystem or on remote machine accessible supported protocols.
 Git Push:- 
