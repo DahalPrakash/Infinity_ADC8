@@ -3,11 +3,11 @@ class bird{
   sound();
 }
 
-class realduck{
+class realduck implement bird{
     fly();
     swim();
 }
 
-class toyduck{
+class toyduck implement bird{
     donot eat();
 }
