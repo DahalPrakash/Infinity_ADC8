@@ -1,0 +1,24 @@
+Violation of interface segregation principle:
+
+interface IPost
+{
+    void CreatePost();
+}
+
+interface IPostNew
+{
+    void CreatePost();
+    void ReadPost();
+}
+
+Correction for interface segregation principle:
+
+interface IPostCreate
+{
+    void CreatePost();
+}
+
+interface IPostRead
+{
+    void ReadPost();
+}
