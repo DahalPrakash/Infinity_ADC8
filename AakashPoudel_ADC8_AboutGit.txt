@@ -1,0 +1,19 @@
+Git clone:
+
+Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository (visible using git branch --remotes), and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.
+
+Git push:
+
+Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+
+Merge conflict:
+
+Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file.
+
+Git branches:
+
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master.
+
+Git commits:
+
+The git commit command captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to. 
