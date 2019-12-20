@@ -1,0 +1,50 @@
+The Single Responsibility Principle states that every module or class should have responsibility over a single part of the functionality provided by the software. 
+“Do one thing and do it well”. This quote refers to the single responsibility principle. It concludes that a class or module must have only one reason to change.
+
+This following piece of code violates the Single Responsibility principle as CreatePost method has too many responsibilities. 
+
+class User
+{
+    void CreatePost(Database db, string postMessage)
+    {
+        try
+        {
+            db.Add(postMessage);
+        }
+        catch (Exception ex)
+        {
+            db.LogError("An error occured: ", ex.ToString());
+            File.WriteAllText("\LocalErrors.txt", ex.ToString());
+        }
+    }
+}
+
+This is the corrected code below which maintains the Single responsibility principle.
+
+class Post
+{
+    private ErrorLogger errorLogger = new ErrorLogger();
+
+    void CreatePost(Database db, string postMessage)
+    {
+        try
+        {
+            db.Add(postMessage);
+        }
+        catch (Exception ex)
+        {
+            errorLogger.log(ex.ToString())
+        }
+    }
+}
+
+class ErrorLogger
+{
+    void log(string error)
+    {
+      db.LogError("An error occured: ", error);
+      File.WriteAllText("\LocalErrors.txt", error);
+    }
+}
+
+Now we have two classes that each has one responsibility; to create a post and to log an error, respectively.
