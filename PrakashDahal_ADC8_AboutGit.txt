@@ -1,0 +1,26 @@
+1
+Explanitation of the Git.
+2
+Git clone:-
+3
+      Git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location. The original repository can be located on the local filesystem or on remote machine accessible supported protocols.
+4
+Git Push:- 
+5
+      The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch , but whereas fetching imports commits to local branches, pushing exports commits to remote branches.
+6
+Git Pull:-
+7
+      The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. ... In the first stage of operation git pull will execute a git fetch scoped to the local branch that HEAD is pointed at.
+8
+Merge conflict:-
+9
+      Git can often resolve differences between branches and merge them automatically. ... Often, merge conflicts happen when people make different changes to the same line of the same file, or when one person edits a file and another person deletes the same file
+10
+Git Branches:-
+11
+      A branch represents an independent line of development. ... The git branch command lets you create, list, rename, and delete branches. It doesn't let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands. 
+12
+Git commit:-
+13
+      The "commit" command is used to save your changes to the local repository. Note that you have to explicitly tell Git which changes you want to include in a commit before running the "git commit" command. This means that a file won't be automatically included in the next commit just because it was changed.
